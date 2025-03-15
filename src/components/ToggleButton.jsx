@@ -22,7 +22,7 @@ export default function () {
   return (
     <button
       onClick={toggleTheme}
-      className="flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r"
+      className=" bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r mb-4"
     >
       Toggle Theme
     </button>
