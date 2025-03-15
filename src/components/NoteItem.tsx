@@ -60,7 +60,7 @@ export default function NoteItem({ note, onDelete }: NoteItemProps) {
       <div className="flex justify-between mt-4 pt-4 border-t border-gray-100">
         <Link
           href={`/notes/${note.id}`}
-          className="text-blue-600 hover:text-blue-800"
+          className="text-blue-600 hover:text-blue-800 dark:text-blue-400"
         >
           View Details
         </Link>

@@ -1,26 +1,41 @@
-bugs/errors
+# Meg Rocky Dolly Tech Assesment - Changes
 
-bug 1 Incorrect HTTP method for updating - using POST instead of PUT
+## Bugs / Errors
 
-updated noteService.ts to use PUT in update Note
+**Bug 1** - Incorrect HTTP method for updating - using POST instead of PUT
 
-bug 2 Not preserving the createdAt date during updates
+    updated noteService.ts to use PUT in update Note
 
-bug 3 deleting without confirming
+**Bug 2** - Not preserving the createdAt date during updates
 
-updated noteItem.tsx to provide a confirmation window and set the is deleting state to false if the window rejects
+    removed assigning the createdAt date in the storage.ts update function given that the created at date will be present in the spread updateNoteDto
 
-bug 4 - Closed bracket in noteService.ts
+**Bug 3** - deleting without confirming
 
-bug 5 - updates/new notes not happening as note form wasn't using the onSubmit function it was being passed from the page.
+    updated noteItem.tsx to provide a confirmation window and set the is deleting state to false if the window rejects
 
-NoteForm.tsx - added calling the onSubmit function in handleSubmit with the data variable
+**Bug 4** - syntax error in noteService.ts
 
-dark mode
+    Closed bracket in noteService.ts
 
-Implemented the toggle button as a client component so it would work with the event listener, the toggle makes use of use effect hook to access users previous theme choice.
+**Bug 5** - updates/new notes not working, note form wasn't using the onSubmit function passed from the page.
 
-other
+    NoteForm.tsx - added calling the onSubmit function in handleSubmit with the data variable
 
-Acessibility - missing form label from search bar
-tidied up console.logs on main page
+## Dark Mode
+
+Implemented the toggle button as a client component so it would work with the event listener. I placed it in the footer so it will effect all components. The toggle functionality makes use of use effect hook and local storage to access users previous theme choice.
+
+## Acessibility
+
+Missing form label from search bar:
+
+    added ARIA Label
+
+Low colour contrast on navigation links and create new note button:
+
+    edited colours in both dark and light mode
+
+## Other
+
+Tidied up console logs

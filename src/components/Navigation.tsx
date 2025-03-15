@@ -27,8 +27,8 @@ export default function Navigation() {
               href="/notes"
               className={`${
                 pathname === "/notes"
-                  ? "text-blue-600"
-                  : "text-gray-800 dark: text-neutral-200"
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-900 dark:text-neutral-200"
               } hover:text-blue-500`}
             >
               All Notes
@@ -37,8 +37,8 @@ export default function Navigation() {
               href="/notes/new"
               className={`${
                 pathname === "/notes/new"
-                  ? "text-blue-600"
-                  : "text-gray-800 dark: text-neutral-200"
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-900 dark:text-neutral-200"
               } hover:text-blue-500`}
             >
               New Note

@@ -76,7 +76,7 @@ export default function NoteForm({
       <div>
         <label
           htmlFor="title"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="block text-sm font-medium text-gray-700 mb-1 dark:text-neutral-100 "
         >
           Title
         </label>
@@ -93,7 +93,7 @@ export default function NoteForm({
       <div>
         <label
           htmlFor="content"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="block text-sm font-medium text-gray-700 mb-1 dark:text-neutral-100"
         >
           Content
         </label>

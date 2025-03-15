@@ -5,9 +5,7 @@ import { initSampleData } from "@/actions/noteActions";
 export default async function HomePage() {
   // Initialize sample data on first load
   await initSampleData();
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark");
-  };
+
   return (
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">
@@ -34,7 +32,7 @@ export default async function HomePage() {
           </Link>
           <Link
             href="/notes/new"
-            className="block w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded text-center"
+            className="block w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded text-center"
           >
             Create New Note
           </Link>

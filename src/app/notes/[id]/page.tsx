@@ -86,7 +86,10 @@ export default function NotePage({ params }: { params: { id: string } }) {
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
           {error}
         </div>
-        <Link href="/notes" className="text-blue-600 hover:underline">
+        <Link
+          href="/notes"
+          className="text-blue-600 dark:text-blue-400 hover:underline"
+        >
           Back to Notes
         </Link>
       </div>
@@ -96,8 +99,13 @@ export default function NotePage({ params }: { params: { id: string } }) {
   if (!note) {
     return (
       <div className="max-w-2xl mx-auto text-center py-8">
-        <p className="text-gray-500 mb-4">Note not found</p>
-        <Link href="/notes" className="text-blue-600 hover:underline">
+        <p className="text-gray-500 dark:text-neutral-100 mb-4">
+          Note not found
+        </p>
+        <Link
+          href="/notes"
+          className="text-blue-600 dark:text-blue-400 hover:underline"
+        >
           Back to Notes
         </Link>
       </div>

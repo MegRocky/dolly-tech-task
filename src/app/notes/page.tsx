@@ -54,7 +54,7 @@ export default function NotesPage() {
         <h1 className="text-2xl font-bold">All Notes</h1>
         <Link
           href="/notes/new"
-          className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+          className="bg-green-700 hover:bg-green-700 text-white px-4 py-2 rounded"
         >
           Create New Note
         </Link>
@@ -66,6 +66,7 @@ export default function NotesPage() {
           <input
             type="text"
             placeholder="Search notes..."
+            aria-label="Search notes"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="flex-grow px-4 py-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-slate-800"
@@ -90,11 +91,11 @@ export default function NotesPage() {
       ) : notes.length > 0 ? (
         <NoteList notes={notes} onDelete={handleDelete} />
       ) : (
-        <div className="text-center py-8 bg-gray-50 rounded">
-          <p className="text-gray-500">No notes found.</p>
+        <div className="text-center py-8 bg-gray-50 rounded dark:bg-slate-900  dark:text-neutral-100">
+          <p className="text-gray-500 dark:text-neutral-300">No notes found.</p>
           <Link
             href="/notes/new"
-            className="inline-block mt-4 text-blue-600 hover:underline"
+            className="inline-block mt-4 text-blue-600 dark:text-blue-400 hover:underline"
           >
             Create your first note
           </Link>
