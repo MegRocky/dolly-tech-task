@@ -4,15 +4,15 @@
 
 **Bug 1** - Incorrect HTTP method for updating - using POST instead of PUT
 
-    updated noteService.ts to use PUT in update Note
+    updated noteService.ts to use PUT in updateNote
 
 **Bug 2** - Not preserving the createdAt date during updates
 
     removed assigning the createdAt date in the storage.ts update function given that the created at date will be present in the spread updateNoteDto
 
-**Bug 3** - deleting without confirming
+**Bug 3** - notes deleting without confirming on the all notes page and not handling state
 
-    updated noteItem.tsx to provide a confirmation window and set the is deleting state to false if the window rejects
+    updated noteItem.tsx to provide a confirmation window and set the isDeleting state to false if the window rejects
 
 **Bug 4** - syntax error in noteService.ts
 
@@ -27,6 +27,8 @@
 Implemented the toggle button as a client component so it would work with the event listener. I placed it in the footer so it will effect all components. The toggle functionality makes use of use effect hook and local storage to access users previous theme choice.
 
 ## Acessibility
+
+I used the wave web accessibility tool to identify some improvents that could be made to the UI from an accessibility perspective. I came across and adressed the following:
 
 Missing form label from search bar:
 

@@ -69,7 +69,7 @@ export default function NoteItem({ note, onDelete }: NoteItemProps) {
           <button
             onClick={handleDelete}
             disabled={isDeleting}
-            className={`text-red-600 hover:text-red-800 ${
+            className={`text-red-600 dark:text-red-500 hover:text-red-800 hover:dark:text-red-700${
               isDeleting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
